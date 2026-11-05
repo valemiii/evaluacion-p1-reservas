@@ -8,13 +8,13 @@
 
 ## Cómo levantar el proyecto
 
-1. Copia la plantilla y cambia `PORT=30XX` por `PORT=3020` en `.env`:
+1. Copia la plantilla:
 
    ```sh
    cp .env-example .env
    ```
 
-   La plantilla incluye un valor de ejemplo para `JWT_SECRET` y censura las credenciales de `DATABASE_URL`; reemplaza ambos por valores válidos. Para la base local de Docker, configura `DATABASE_URL` con el formato `postgresql://<usuario>:<contraseña>@localhost:5432/espe_db?schema=public`, usando las credenciales definidas en `docker-compose.yml`.
+   Cambia `30XX` por `3020` en `.env`; el resto de valores de la plantilla se usan tal cual con la base de Docker.
 
 2. Instala las dependencias:
 
